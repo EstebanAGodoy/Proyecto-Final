@@ -8,7 +8,7 @@ img{
 
 body {
     display: grid;
-    grid-template-columns: 20% 80%;
+    grid-template-columns: 35% 65%;
     grid-template-rows: 100%;
 }
 
@@ -51,16 +51,15 @@ h4 {
 }
 
 footer {
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 100%;
     text-align: center;
 }
 
-footer p {
-    align-content: center;
-}
-
 .right {   
-    padding-left: 5%;
-    padding-right: 50%;
+    padding-left: 50px;
+    padding-right: 150px;
 }
 
 .right div{
@@ -80,4 +79,18 @@ aside {
 
 li{
     font-size: 20px;
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+    body {
+        grid-template-columns: 30% 70%;
+    }
+}
+
+/* Estilos para pantallas menores a 768px */
+@media only screen and (max-width: 768px) {
+    body {
+        display: flex;
+        flex-direction: column;
+    }      
 }
