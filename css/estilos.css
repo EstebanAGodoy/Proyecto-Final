@@ -1,10 +1,11 @@
 *{   
     margin: 0;
 }
-img{
+.photo img{
+    display: block;
     border-radius: 50%;
+    margin: 0 auto;
 }
-
 
 body {
     display: grid;
@@ -50,13 +51,6 @@ h4 {
     font-size: 24px;
 }
 
-footer {
-    display: grid;
-    grid-template-columns: 100%;
-    grid-template-rows: 100%;
-    text-align: center;
-}
-
 .right {   
     padding-left: 50px;
     padding-right: 150px;
@@ -92,5 +86,28 @@ li{
     body {
         display: flex;
         flex-direction: column;
-    }      
+    }
+
+    h1 {
+        font-size: 48px;
+        color: rgb(99, 99, 248);
+        text-align: right;
+    }
+    
+    h2{
+        font-size: 24px;
+    }
+    
+    h3 {
+        font-size: 18px;
+        color: rgb(99, 99, 248);
+    }
+    
+    h4 {
+        font-size: 18px;
+    }
+
+    li{
+        font-size: 14px;
+    }
 }
