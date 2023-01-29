@@ -24,14 +24,17 @@ var informacion1 = document.getElementById("mas-info");
 var informacion2 = document.getElementById("Habilidades");
 var informacion3 = document.getElementById("idiomas");
 
-boton1.addEventListener("click", function() {
+boton1.addEventListener("click", function(event) {
+    event.preventDefault();
     mostrarInfo2(boton1, informacion1);
 });
 
-boton2.addEventListener("click", function() {
+boton2.addEventListener("click", function(event) {
+    event.preventDefault();
     mostrarInfo(boton2, informacion2);
 });
 
-boton3.addEventListener("click", function() {
+boton3.addEventListener("click", function(event) {
+    event.preventDefault();
     mostrarInfo(boton3, informacion3);
 });
