@@ -6,6 +6,9 @@
     <meta name="viewport" content="width=device-width,initial-scale=1"/>
     <link rel="stylesheet" href="">
     <title>Curriculum Vitae</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
     <link rel="shortcut icon" href="https://favicon-generator.org/favicon-generator/htdocs/favicons/2023-01-26/2d59ad28add2d8d25b2e2723c25f3b67.ico.png" type="image/x-icon">
     <link rel="stylesheet" href="css/estilos.css">
     <!-- Open Graph data -->
@@ -16,39 +19,48 @@
     <meta property="og:description" content="Proyecto Final - Curriculum Vitae" />
     
 </head>
-<body>
+<body>    
         <section class="left">                
             <section class="photo">
                 <img src="https://randomuser.me/api/portraits/women/9.jpg" alt="Tanya Thomas">
-                <p>04/07/1949</p> 
             </section><br>             
-            
             <div>
                 <br>
-                <h2>Contacto</h2>                      
-                <i class="fa-regular fa-phone"><img src="iconos/icons8-phone-30.png" alt="phone"></i>  +(644)315 - 5744 <br>
-                <i class="fa-regular fa-envelope"><img src="iconos/icons8-mail-30.png" alt="email"></i>  tanya.thomas@example.com <br>
-                <i class="fa-light fa-location-dot"><img src="iconos/icons8-place-marker-24.png" alt="location"></i>  5986 Locust RD 
+                <h2 id="contacto">Contacto</h2><br>                     
+                <i><img src="iconos/icons8-birth-date-30.png" alt="birthdate">  04/07/1949</i><br>
+                <i><img src="iconos/icons8-phone-30.png" alt="phone">  +(644)315 - 5744</i><br>
+                <i><img src="iconos/icons8-mail-30.png" alt="email">  tanya.thomas@example.com</i><br>
+                <i><img src="iconos/icons8-place-marker-24.png" alt="location">  5986 Locust RD</i>   
             </div>
             <br>
-            <div ><br>
-                <h2>Más información</h2>
+            <form>
+                <button class="btn" id="mostrar">Más información</button><br>
+            </form>
+            <div id="mas-info"><br>    
                 <ul>
                     <li>Carnet de conducir</li>
                     <li>Vehículo propio</li>
                     <li>Disponibilidad total</li>
-                </ul>
+                </ul><br>
             </div>        
-        </section>
-        
-        <section class="right">            
+        </section>        
+        <section class="right">
+            <div id="menu">
+                <ul>
+                    <li><a href="#contacto"> Contacto</a> ||</li>
+                    <li><a href="#experiencia-laboral"> Experiencia Laboral</a> ||</li>
+                    <li><a href="#datos-academicos"> Datos Académicos</a> ||</li>
+                    <li><a href="#Habilidades"> Habilidades</a> ||</li>
+                    <li><a href="#idiomas"> Idiomas</a></li>
+                  </ul>
+            </div>            
             <div id="name">
                 <h1>Tanya Thomas</h1>
                 <h2>Diseñadora e Ilustradora</h2><br><br><br>
             </div> 
             <div>
                 <div id="trabajo1">
-                    <br><h2>Experiecia Laboral</h2>
+                    <br><h2 id="experiencia-laboral">Experiecia Laboral</h2>
                     <br><h3>Creadora de contenido</h3>                   
                     <h4>Empresa de contenido, S.L. | Septiembre 2019 - Junio 2021</h4>
                     <ul>
@@ -67,18 +79,27 @@
                     </ul>
                 </div>
                 <br><br><div id="Datos-académicos">
-                    <br><h2>Datos académicos </h2><br>
+                    <br><h2 id="datos-academicos">Datos académicos </h2><br>
                     <h3>Universidad del mar</h3>
                     <h4>Estudios en artes Graficas | Actual</h4><br>
                     <h3>Centro de estudios San Juan</h3>
                     <h4>Estudios de animación | Septiembre 2018 - Julio 2021</h4><br>
                     <h3>Escuela de negocios</h3>
                     <h4>Estudios en publicidad | Septiembre 2015 - Julio 2017</h4>
-                </div>
+                </div><br><br>
+
+                <section id="botonesHI">
+                    <form>
+                        <button class="btn-right" id="mostrar-habilidades">Habilidades</button><br>
+                    </form>
     
-                <br><br><aside>
-                    <div id="Habilidades">
-                        <br><h2>Habilidades</h2>
+                    <form>
+                        <button class="btn-right"W id="mostrar-idiomas">Idiomas</button><br>
+                    </form>
+                </section>            
+               
+                <aside>                    
+                    <div id="Habilidades"><br>               
                         <ul>
                             <li>Diseño de páginas web.</li>
                             <li>Diseño de logotipos.</li>
@@ -89,9 +110,8 @@
                             <li>Creación de contenido.</li>
                             <li>Definicion de estrategias.</li>
                         </ul>
-                    </div>
-                    <div id="idiomas">
-                        <br><h2>Idiomas</h2>
+                    </div>                    
+                    <div id="idiomas"><br>                    
                         <h3>Castellano y catalán:</h3>
                         <p>Nativo.</p><br>
     
@@ -101,5 +121,6 @@
                 </aside>            
             </div>
         </section>
+        <script src="js/function.js"></script>
 </body>
 </html>
